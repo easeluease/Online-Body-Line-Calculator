@@ -162,6 +162,7 @@
   </form>
 
   {#if result}
+    <hr>
     <div id="result">
       {@html result}
     </div>
