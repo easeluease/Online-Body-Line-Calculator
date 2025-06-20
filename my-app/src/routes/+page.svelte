@@ -57,6 +57,10 @@
   }
 </script>
 
+<head>
+  <link rel="icon" type="image/png" href="/osh-logo.png" />
+</head>
+
 <style>
   .container {
     max-width: 600px;
@@ -167,4 +171,5 @@
       {@html result}
     </div>
   {/if}
+
 </div>
