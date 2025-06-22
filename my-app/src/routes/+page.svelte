@@ -46,24 +46,24 @@
     const hipsBust = (hipsNum / bustNum) * 100;
     const waistBust = (waistNum / bustNum) * 100;
 
-    let shape = "";
+    let shape = ""; 
 
-    if (hipsBust > 106) {
+    if (hipsBust >= 106) { // Hips are more than 106% of Bust
       shape = "Triangle Body Line";
     } else if (
-      hipsBust >= 100 &&
-      hipsBust <= 106 &&
-      waistBust >= 80 &&
-      waistBust <= 90
+      hipsBust >= 100 && //and Hips are between 100% and 106% of Bust
+      hipsBust < 106 &&
+      waistBust >= 80 && //and Waist is more than 80% of Bust
+      waistBust < 89.99
     ) {
       shape = "Rectangle Body Line";
-    } else if (hipsBust >= 100 && hipsBust <= 106 && waistBust < 79) {
+    } else if (hipsBust >= 100 && hipsBust <= 105.99 && waistBust <= 79.99) { //hipsBust between 100%–105.99% AND waistBust < 79.99%
       shape = "Hourglass Body Line";
-    } else if (hipsBust < 100 && waistBust < 90) {
+    } else if (hipsBust < 100 && waistBust < 89.99) { //hipsBust < 100% AND waistBust < 89.99%
       shape = "Inverted Triangle Body Line";
-    } else if (hipsBust < 100 && waistBust > 90) {
+    } else if (hipsBust < 100 && waistBust >= 90) { //hipsBust < 100% AND waistBust >= 90%
       shape = "Oval Body Line";
-    } else {
+    } else { // If none of the above conditions are met
       shape = "Error - Please check your measurements.";
     }
 
@@ -103,7 +103,7 @@
   <div class="app-wrapper">
     <!-- Attach header back to the card and center -->
     <header class="main-header">
-      <h1>Online Body Line Calculator</h1>
+      <h1>OSH Image Academy Body Line Calculator</h1>
     </header>
     <main class="container">
       <div class="steps">
@@ -194,7 +194,7 @@
         alt="OSH Logo"
         class="osh-logo"
       />
-      <span>Copyright ©2025 All rights reserved, OSH IMAGE ACADEMY </span>
+      <span>Copyright ©2025 All rights reserved, OSH Image Academy Sdn. Bhd. </span>
       <div class="osh-footer-socials">
         <a href="https://www.facebook.com/stylebyosh/" target="_blank" rel="noopener" aria-label="Facebook" class="osh-social-link">
           <!-- Minimalistic Facebook SVG -->
