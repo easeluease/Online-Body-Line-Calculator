@@ -58,7 +58,7 @@
     ) {
       shape = "Rectangle Body Line";
     } else if (hipsBust >= 100 && hipsBust <= 105.99 && waistBust <= 79.99) { //hipsBust between 100%–105.99% AND waistBust < 79.99%
-      shape = "Hourglass Body Line";
+      shape = "Hourglass";
     } else if (hipsBust < 100 && waistBust < 89.99) { //hipsBust < 100% AND waistBust < 89.99%
       shape = "Inverted Triangle Body Line";
     } else if (hipsBust < 100 && waistBust >= 90) { //hipsBust < 100% AND waistBust >= 90%
